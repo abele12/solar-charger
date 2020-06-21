@@ -1,58 +1,58 @@
 #include <Servo.h>
-Servo myservo;//create servo object to control a servo
+Servo myservo;//δημιουργείται το αντικείμενο που ελέγχει το servo
 
 void setup()
 {
-  myservo.attach(9);//attachs the servo on pin 9 to servo object
-  myservo.write(0);//back to 0 degrees 
-  delay(1000);//wait for a second
+  myservo.attach(9);//ο σερβοκινητήρας συνδέεται στο pin 9
+  myservo.write(0);//γυρίζει στις 0 μοίρες
+  delay(1000);//περιμένει 1 sec
 }
 
 void loop()
 {  
-  myservo.write(15);//goes to 15 degrees 
-  delay(1000);//wait for a second
+  myservo.write(15);//γυρίζει στις 15 μοίρες
+  delay(1000);//περιμένει 1 sec
 
-  myservo.write(30);//goes to 30 degrees 
-  delay(1000);//wait for a second.33
+  myservo.write(30);//γυρίζει στις 30 μοίρες 
+  delay(1000);//περιμένει 1 sec
   
-  myservo.write(45);//goes to 45 degrees 
-  delay(1000);//wait for a second.33
+  myservo.write(45);//γυρίζει στις 45 μοίρες 
+  delay(1000);//περιμένει 1 sec
 
-  myservo.write(60);//goes to 60 degrees 
-  delay(1000);//wait for a second.33
+  myservo.write(60);//γυρίζει στις 60 μοίρες 
+  delay(1000);//περιμένει 1 sec
 
-  myservo.write(75);//goes to 75 degrees 
-  delay(1000);//wait for a second.33
+  myservo.write(75);//γυρίζει στις 75 μοίρες 
+  delay(1000);//περιμένει 1 sec
 
-  myservo.write(90);//goes to 90 degrees
-  delay(1000);//wait for a second
+  myservo.write(90);//γυρίζει στις 90 μοίρες
+  delay(1000);//περιμένει 1 sec
 
-  myservo.write(75);//back to 75 degrees 
-  delay(1000);//wait for a second.33
+  myservo.write(75);//γυρίζει στις 75 μοίρες 
+  delay(1000);//περιμένει 1 sec
 
-  myservo.write(60);//back to 60 degrees
-  delay(1000);//wait for a second.33
+  myservo.write(60);//γυρίζει στις 60 μοίρες
+  delay(1000);//περιμένει 1 sec
 
-  myservo.write(45);//back to 45 degrees
-  delay(1000);//wait for a second.33
+  myservo.write(45);//γυρίζει στις 45 μοίρες
+  delay(1000);//περιμένει 1 sec
 
-  myservo.write(30);//back to 30 degrees
-  delay(1000);//wait for a second.33
+  myservo.write(30);//γυρίζει στις 30 μοίρες
+  delay(1000);//περιμένει 1 sec
 
-  myservo.write(15);//back to 15 degrees 
-  delay(1000);//wait for a second
+  myservo.write(15);//γυρίζει στις 15 μοίρες 
+  delay(1000);//περιμένει 1 sec
 
-  myservo.write(0);//back to 0 degrees 
-  delay(1000);//wait for a second
+  myservo.write(0);//γυρίζει στις 0 μοίρες
+  delay(1000);//περιμένει 1 sec
   for(int num=0;num<=180;num++)
   {
-     myservo.write(num);//back to 'num' degrees(0 to 180)
+     myservo.write(num);//γυρίζει 'num' μοίρες (0 έως 180)
      delay(10);//control servo speed
   }
   for(int num=180;num>=0;num--)
   {
-     myservo.write(num);//back to 'num' degrees(180 to 0)
-     delay(10);//control servo speed 
+     myservo.write(num);//γυρίζει 'num' μοίρες (180 έως 0)
+     delay(10);//ελέγχει την ταχύτητα του σερβοκινητήρα
   }
 }
